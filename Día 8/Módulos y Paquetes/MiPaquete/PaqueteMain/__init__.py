@@ -1,0 +1,1 @@
+## No es necesario que tenga contenido. El nombre del paquete es el nombre de la carpeta, en este caso, mi paquete se llama "PaqueteMain" Todos los módulos creados en esta carpeta estarán alojados en este paquete. Se crearán módulos en esta carpeta para el ejemplo. En este caso crearé SumaResta.py
