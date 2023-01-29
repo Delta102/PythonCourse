@@ -1,3 +1,4 @@
 # Ignorar toda la carpeta pycache
 __pycache__
 setting.py
+db.sqlite3
