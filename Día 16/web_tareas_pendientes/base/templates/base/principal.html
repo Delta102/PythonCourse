@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pendientes</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@1,400;1,700&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: #E5D4D1;
+            font-family: 'Courier Prime', monospace;
+            padding-top: 60px;
+        }
+        
+        .container{
+            max-width: 550px;
+            margin: auto;
+            background-color: #E1DFDE;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+        }
+        
+        h1, h2, h3, h4, h5, h6{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        a, p{
+            color: #996E66;
+        }
+
+        .barraSuperior{
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg, #70afe2 0%, #3A8ACC 43%, #3A8ACC 100%);
+        }
+
+        .barraSuperior a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+        }
+
+        .envoltorio-tarea{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ffff;
+            border-top: 1px solid rgb(225, 225, 225);
+        }
+
+        .titulo-tarea{
+            display: flex;
+        }
+
+        .titulo-tarea a{
+            text-decoration: none;
+            color: #4b5156;
+            margin-left: 10px;
+        }
+
+        .icono-tarea-completa{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(105, 162, 105);
+            border-radius: 50px;
+        }
+
+        .icono-tarea-incompleta{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(218, 218, 218);
+            border-radius: 50px;
+        }
+
+        .enlace-eliminar{
+            text-decoration: none;
+            font-weight: 900;
+            color: #EA4220;
+            font-size: 22px;
+            line-height: 0;
+        }
+
+        #envoltorio-agregar-buscar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #enlace-agregar{
+            color: #EA4220;
+            text-decoration: none;
+            font-size: 42px;
+            text-shadow: 1px 1px #81413B;
+        }
+        
+        input[type=text],
+        input[type=password],
+        textarea{
+            border: 1px solid #EB796F;
+            border-radius: 5px;
+            padding: 10px;
+            width: 90%;
+        }
+        
+        label{
+            padding-top: 10px !important;
+            display: block;
+        }
+
+        .boton{
+            border: 1px solid #EB796F;
+            background-color: #FAFAFA;
+            color: #EB796F;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cuerpo-tarjeta{
+            padding: 20px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+
+        {% endblock content %}
+    </div>
+</body>
+</html>
